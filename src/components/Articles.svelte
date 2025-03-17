@@ -29,7 +29,7 @@
             A központi szellőzés egy olyan épületgépészeti rendszer, amelynek célja a friss levegő folyamatos biztosítása és a használt levegő hatékony eltávolítása a lakóépületekből. Ez a rendszer kulcsfontosságú szerepet játszik az egészséges és kényelmes lakókörnyezet kialakításában. A központi szellőzés nem csupán a levegő cseréjéről szól, hanem a páratartalom, a hőmérséklet és a levegőminőség szabályozásáról is gondoskodik. A [...]
           </p>
           <div class="mt-auto">
-            <a href="/cikkek/kozponti-szellozes" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+            <a href="/cikkek/kozponti-szellozes-szerepe" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
               OLVASS TOVÁBB
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -90,7 +90,7 @@
             Mivel a jelenlegi energiapolitika a zöld átállás mellett tette le a voksát, nincs kétség afelől, hogy a hőszivattyúk felváltják a fosszilis energiával működő fűtéstechnikai berendezéseket. A fiatalabb generációk egyre tudatosabbak és egyre nagyobb népszerűségnek örvend a fenntarthatóság, környezettudatosság, karbonlábnyomunk csökkentése. Az új energetikai szabályozásokban megadott kötelező megújuló energia rész arány is arra segít következtetni, hogy [...]
           </p>
           <div class="mt-auto">
-            <a href="/cikkek/megeri-a-hoszivattyu" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+            <a href="/cikkek/hoszivattyu" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
               OLVASS TOVÁBB
               <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
                 <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
