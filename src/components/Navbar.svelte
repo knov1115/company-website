@@ -4,6 +4,17 @@
   function toggleDropdown() {
     isDropdownOpen = !isDropdownOpen;
   }
+
+  function scrollToServices(event) {
+    event.preventDefault();
+    const servicesSection = document.getElementById('szolgaltatasaink');
+    if (servicesSection) {
+      servicesSection.scrollIntoView({ 
+        behavior: 'smooth',
+        block: 'start'
+      });
+    }
+  }
 </script>
 
 <nav class="bg-white shadow-md sticky top-0 z-50">
@@ -22,7 +33,7 @@
 
       <!-- Navigation Links -->
       <div class="hidden md:flex items-center space-x-8 text-gray-700">
-        <a href="/szolgaltatasaink" class="font-medium hover:text-[#DC0000] transition-colors duration-200">SZOLGÁLTATÁSAINK</a>
+        <a href="/#szolgaltatasaink" on:click={scrollToServices} class="font-medium hover:text-[#DC0000] transition-colors duration-200">SZOLGÁLTATÁSAINK</a>
         <a href="/rolunk" class="font-medium hover:text-[#DC0000] transition-colors duration-200">RÓLUNK</a>
         <a href="/cikkek" class="font-medium hover:text-[#DC0000] transition-colors duration-200">CIKKEK</a>
         

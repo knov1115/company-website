@@ -6,6 +6,7 @@
   export let imageSrc = "";
   export let imageAlt = "";
   export let IntroText = "";
+  export let ctaText = "";
 </script>
 
 <div class="relative">
@@ -24,6 +25,9 @@
           {description}
         </p>
       </div>
+      {#if ctaText}
+        <h3 class="text-2xl font-bold text-black mb-4">{ctaText}</h3>
+      {/if}
       
       {#if buttonText}
         <a href={buttonLink} class="inline-flex items-center bg-[#DC0000] text-white px-8 py-3 text-sm font-medium uppercase hover:bg-[#b00000] transition-colors">

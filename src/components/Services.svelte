@@ -1,4 +1,4 @@
-<section class="py-16 bg-gray-50">
+<section id="szolgaltatasaink" class="py-16 bg-gray-50">
   <div class="container mx-auto px-4">
     <h2 class="text-4xl font-bold text-center mb-12">Szolgáltatásaink</h2>
     
@@ -20,7 +20,7 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Klíma</h3>
           <p class="text-gray-600 mb-4">Tervezés, tanácsadás, telepítés.</p>
-          <a href="/szolgaltatasok/klima" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+          <a href="/szolgaltatasaink/klima" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
             MEGOLDÁSOK MEGTEKINTÉSE
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
