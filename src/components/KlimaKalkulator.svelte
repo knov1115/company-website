@@ -21,6 +21,9 @@
   };
 
   let pond;
+  let isSubmitting = false;
+  let submitError = null;
+  let submitSuccess = false;
   
   onMount(() => {
     // Inicializáljuk a FilePond-ot
@@ -58,10 +61,88 @@
   });
 
   // Form submission handler
-  function handleSubmit() {
-    console.log('Form submitted:', formData);
-    // Here you would typically send the data to a server
-    alert('Köszönjük a kitöltést! Kollégáink hamarosan felveszik Önnel a kapcsolatot.');
+  async function handleSubmit() {
+    try {
+      // Loading állapot beállítása
+      isSubmitting = true;
+      submitError = null;
+      submitSuccess = false;
+      
+      // Előkészítjük az adatokat a küldésre
+      const formDataToSubmit = {
+        name: formData.name,
+        location: formData.location,
+        email: formData.email,
+        phone: formData.phone,
+        usage: formData.usage,
+        squareMeters: formData.squareMeters,
+        megbizhatosag: formData.megbizhatosag,
+        ar: formData.ar,
+        design: formData.design,
+        energiaHatekonysag: formData.energiaHatekonysag,
+        csendesMusik: formData.csendesMusik,
+        message: formData.message,
+        // Fájlinformációk konvertálása egyszerű objektummá
+        files: formData.files.map(file => ({
+          name: file.name || 'ismeretlen_fajl',
+          type: file.type || 'application/octet-stream',
+          size: file.size || 0,
+          lastModified: file.lastModified || Date.now()
+        }))
+      };
+      
+      console.log('Adatok elküldése a szervernek:', formDataToSubmit);
+      
+      // API kérés küldése
+      const response = await fetch('/api/klima-kalkulator', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formDataToSubmit)
+      });
+      
+      // Válasz feldolgozása
+      const result = await response.json();
+      
+      // Loading állapot kikapcsolása
+      isSubmitting = false;
+      
+      if (result.success) {
+        // Sikeres küldés esetén
+        submitSuccess = true;
+        
+        // Form resetelése
+        formData = {
+          name: '',
+          location: '',
+          email: '',
+          phone: '',
+          usage: '',
+          squareMeters: '',
+          megbizhatosag: 3,
+          ar: 3,
+          design: 3,
+          energiaHatekonysag: 3,
+          csendesMusik: 3,
+          files: [],
+          message: '',
+          agreeToPrivacyPolicy: false
+        };
+        
+        // FilePond reset ha szükséges
+        if (pond) pond.removeFiles();
+        
+      } else {
+        // Hiba esetén
+        submitError = result.message || 'Hiba történt a küldés során. Kérjük próbálja újra később.';
+      }
+      
+    } catch (error) {
+      console.error('Hiba történt az adatok küldése során:', error);
+      submitError = 'Hiba történt a küldés során. Kérjük próbálja újra később.';
+      isSubmitting = false;
+    }
   }
 </script>
 
@@ -198,6 +279,20 @@
 <div class="calculator-container">
   <h2 class="text-2xl font-bold mb-6">Klíma kalkulátor</h2>
   
+  {#if submitSuccess}
+    <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded mb-6" role="alert">
+      <p class="font-bold">Sikeres küldés!</p>
+      <p>Köszönjük! Adatait sikeresen rögzítettük, kollégánk hamarosan felveszi Önnel a kapcsolatot.</p>
+    </div>
+  {/if}
+  
+  {#if submitError}
+    <div class="bg-red-100 border border-red-400 text-red-700 px-4 py-3 rounded mb-6" role="alert">
+      <p class="font-bold">Hiba történt!</p>
+      <p>{submitError}</p>
+    </div>
+  {/if}
+  
   <form on:submit|preventDefault={handleSubmit}>
     <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
       <!-- Név -->
@@ -209,6 +304,7 @@
           class="form-input" 
           bind:value={formData.name} 
           required
+          disabled={isSubmitting}
         />
       </div>
       
@@ -221,6 +317,7 @@
           class="form-input" 
           bind:value={formData.location} 
           required
+          disabled={isSubmitting}
         />
       </div>
       
@@ -233,6 +330,7 @@
           class="form-input" 
           bind:value={formData.email} 
           required
+          disabled={isSubmitting}
         />
       </div>
       
@@ -245,13 +343,14 @@
           class="form-input" 
           bind:value={formData.phone} 
           required
+          disabled={isSubmitting}
         />
       </div>
       
       <!-- Mire szeretné használni a klímát? -->
       <div class="input-group">
         <label for="usage" class="block text-sm font-medium mb-2">Mire szeretné használni a klímát?</label>
-        <select id="usage" class="form-select" bind:value={formData.usage} required>
+        <select id="usage" class="form-select" bind:value={formData.usage} required disabled={isSubmitting}>
           <option value="" disabled selected>Kérjük válasszon...</option>
           <option value="hutes">Csak hűtésre</option>
           <option value="futes">Csak fűtésre</option>
@@ -262,7 +361,7 @@
       <!-- Hány m² a hűteni/fűteni kívánt helyiség? -->
       <div class="input-group">
         <label for="squareMeters" class="block text-sm font-medium mb-2">Hány m² a hűteni/fűteni kívánt helyiség?</label>
-        <select id="squareMeters" class="form-select" bind:value={formData.squareMeters} required>
+        <select id="squareMeters" class="form-select" bind:value={formData.squareMeters} required disabled={isSubmitting}>
           <option value="" disabled selected>Kérjük válasszon...</option>
           <option value="20-alatt">20 m² alatt</option>
           <option value="20-30">20-30 m²</option>
@@ -412,7 +511,19 @@
     
     <!-- Submit Button -->
     <div class="mt-8">
-      <button type="submit" class="submit-btn">KÜLDÉS</button>
+      <button type="submit" class="submit-btn" disabled={isSubmitting}>
+        {#if isSubmitting}
+          <span class="inline-flex items-center">
+            <svg class="animate-spin -ml-1 mr-3 h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
+              <circle class="opacity-25" cx="12" cy="12" r="10" stroke="currentColor" stroke-width="4"></circle>
+              <path class="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
+            </svg>
+            FELDOLGOZÁS...
+          </span>
+        {:else}
+          KÜLDÉS
+        {/if}
+      </button>
     </div>
   </form>
 </div> 
