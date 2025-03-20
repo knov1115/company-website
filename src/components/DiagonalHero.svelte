@@ -9,7 +9,7 @@
   export let ctaText = "";
 </script>
 
-<div class="relative">
+<div class="relative mb-32">
   <!-- Left side content -->
   <div class="container mx-auto px-4 py-16 lg:py-24">
     <div class="w-full lg:w-1/2">

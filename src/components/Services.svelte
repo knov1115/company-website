@@ -46,7 +46,7 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Hőszivattyú</h3>
           <p class="text-gray-600 mb-4">Tervezés, tanácsadás, telepítés.</p>
-          <a href="/szolgaltatasok/hoszivatyu" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+          <a href="/szolgaltatasaink/hoszivattyuk" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
             MEGOLDÁSOK MEGTEKINTÉSE
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -72,7 +72,7 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Épületgépészeti kivitelezés</h3>
           <p class="text-gray-600 mb-4">Fűtés – Hűtés – Vízellátás és Szellőzéstechnika Ipari és családi házas léptékben is.</p>
-          <a href="/szolgaltatasok/epuletgepeszet" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+          <a href="/szolgaltatasaink/epuletgepeszet" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
             MEGOLDÁSOK MEGTEKINTÉSE
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -98,7 +98,7 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Épületvillamosság</h3>
           <p class="text-gray-600 mb-4">Kisfeszültségű elektromos hálózatok tervezése és kivitelezése.</p>
-          <a href="/szolgaltatasok/klima" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+          <a href="/szolgaltatasaink/epuletvillamossag" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
             MEGOLDÁSOK MEGTEKINTÉSE
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -124,7 +124,7 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Betonfúrás, magfúrás</h3>
           <p class="text-gray-600 mb-4">Szakmai tapasztalattal és a legkorszerűbb betonfúró eszközökkel, berendezésekkel rendelkezünk.</p>
-          <a href="/szolgaltatasok/klima" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+          <a href="/szolgaltatasaink/betonfuras" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
             MEGOLDÁSOK MEGTEKINTÉSE
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
@@ -151,7 +151,7 @@
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Épületgépészeti tervezés és energetika</h3>
           <p class="text-gray-600 mb-4">Egyszerű bejelentéstől a komplex kiviteli tervekig.</p>
-          <a href="/szolgaltatasok/klima" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
+          <a href="/szolgaltatasaink/epuletgepeszet" class="text-[#DC0000] font-medium hover:text-[#b00000] inline-flex items-center">
             MEGOLDÁSOK MEGTEKINTÉSE
             <svg xmlns="http://www.w3.org/2000/svg" class="h-4 w-4 ml-2" fill="none" viewBox="0 0 24 24" stroke="currentColor">
               <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
