@@ -6,16 +6,23 @@
   import ProcessSteps from "../../../components/ProcessSteps.svelte";
   import BenefitsSection from "../../../components/BenefitsSection.svelte";
   import BetonfurasKalkulator from "../../../components/BetonfurasKalkulator.svelte";
-
-  const betonfurasTortenelem = `
-    <p class="text-gray-700 leading-relaxed">
-      A betonfúrás és magfúrás technológiája jelentős fejlődésen ment keresztül az elmúlt évtizedekben. A kezdeti, nehézkes és zajos pneumatikus fúrógépeket mára felváltották a gyémántszegmenses technológiával működő, precíz, alacsony zajszintű és környezetbarát gépek, amelyek akár több méter vastag vasbeton szerkezeteken is képesek átfúrni.
-    </p>
-
-    <p class="text-gray-700 leading-relaxed">
-      A modern betonfúrás és magfúrás technológiája lehetővé teszi, hogy minimális porképződéssel, vibrációval és zajjal végezzük a munkákat. A gyémánttárcsás vágás és fúrás pontossága elérte azt a szintet, hogy akár milliméter pontossággal tudunk áttöréseket készíteni bármilyen betonelemben, legyen az fal, födém vagy egyéb vasbetonszerkezet.
-    </p>
-  `;
+  import ShopBanner from "../../../components/ShopBanner.svelte";
+  
+  
+  // Esemény kezelők
+  function handleSzamitas(event) {
+    console.log('Számítás eredménye:', event.detail);
+  }
+  
+  function handleAjanlat(event) {
+    console.log('Ajánlathoz adott tétel:', event.detail);
+  }
+  
+  function handleKuldes(event) {
+    console.log('Küldés esemény:', event.detail);
+    // Itt lehetne kapcsolatba lépni a backend szolgáltatással
+    alert('Köszönjük! Az árajánlatkérését megkaptuk, hamarosan felvesszük Önnel a kapcsolatot.');
+  }
 </script>
 
 <DiagonalHero 
@@ -33,20 +40,16 @@
       Kalkulátorunk segítségével gyorsan kiszámolhatja a betonfúrási munkák várható költségét. Töltse ki az alábbi űrlapot, és kollégáink hamarosan felveszik Önnel a kapcsolatot a pontos árajánlattal.
     </p>
     
-    <BetonfurasKalkulator />
+    <BetonfurasKalkulator 
+      on:szamitas={handleSzamitas}
+      on:ajanlat={handleAjanlat}
+      on:kuldes={handleKuldes}
+    />
   </div>
 </section>
 
-<ImageTextSplit
-  title="Betonfúrásról, magfúrásról általánosan"
-  imageLeft="/images/service_images/betonfuras_images/betonfuras_1_img.jpg"
-  imageRight="/images/service_images/betonfuras_images/betonfuras_2_img.jpg"
-  imageAltLeft="Hagyományos betonfúrási módszerek"
-  imageAltRight="Modern gyémánttechnológiás betonfúrás"
-  content={betonfurasTortenelem}
-  ctaText="Kapcsolatfelvétel"
-  ctaLink="/kapcsolat"
-  backgroundColor="bg-gray-50"
-/>
+
+<ShopBanner />
+
 
 <Footer /> 
