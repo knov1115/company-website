@@ -6,16 +6,20 @@
       <!-- Klíma Card -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/ac_service_img.jpg"
-            alt="Klíma szolgáltatás"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </div>
+          <a href ="/szolgaltatasaink/klima">
+            <img
+              src="/images/ac_service_img.jpg"
+              alt="Klíma szolgáltatás"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+              
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
+          
         </div>
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Klíma</h3>
@@ -32,16 +36,18 @@
       <!-- Hőszivattyú Card -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/hoszivattyu_service_img.jpg"
-            alt="Hőszivattyú szolgáltatás"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </div>
+          <a href ="/szolgaltatasaink/hoszivattyuk">
+            <img
+              src="/images/hoszivattyu_service_img.jpg"
+              alt="Hőszivattyú szolgáltatás"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Hőszivattyú</h3>
@@ -58,16 +64,18 @@
       <!-- Épületgépészeti kivitelezés Card -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/epuletgepeszet_service_img.jpg"
-            alt="Épületgépészeti kivitelezés"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </div>
+          <a href ="/szolgaltatasaink/epuletgepeszet">
+            <img
+              src="/images/epuletgepeszet_service_img.jpg"
+              alt="Épületgépészeti kivitelezés"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Épületgépészeti kivitelezés</h3>
@@ -84,16 +92,18 @@
       <!-- Épületvillamosság Card -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/epuletvillamossag_service_img.jpg"
-            alt="Klíma szolgáltatás"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </div>
+          <a href ="/szolgaltatasaink/epuletvillamossag">
+            <img
+              src="/images/epuletvillamossag_service_img.jpg"
+              alt="Klíma szolgáltatás"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Épületvillamosság</h3>
@@ -110,16 +120,18 @@
       <!-- Betonfúrás, magfúrás Card -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/betonfuras_service_img.jpg"
-            alt="Klíma szolgáltatás"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </div>
+          <a href ="/szolgaltatasaink/betonfuras">
+            <img
+              src="/images/betonfuras_service_img.jpg"
+              alt="Klíma szolgáltatás"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Betonfúrás, magfúrás</h3>
@@ -137,16 +149,18 @@
       <!-- Épületgépészeti tervezés és energetika Card -->
       <div class="bg-white rounded-lg overflow-hidden shadow-lg group">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/tervezes_service_img.jpg"
-            alt="Klíma szolgáltatás"
-            class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
-            </svg>
-          </div>
+          <a href ="/szolgaltatasaink/tervezes">
+            <img
+              src="/images/tervezes_service_img.jpg"
+              alt="Klíma szolgáltatás"
+              class="w-full h-full object-cover transition-transform duration-300 group-hover:scale-105"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white transform rotate-45" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M14 5l7 7m0 0l-7 7m7-7H3" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="p-6">
           <h3 class="text-2xl font-bold mb-2">Épületgépészeti tervezés és energetika</h3>

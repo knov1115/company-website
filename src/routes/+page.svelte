@@ -11,7 +11,9 @@
   }
 </script>
 
-<MainHero />
+<MainHero 
+  ctaLink="/rolunk"
+/>
 <Services />
 <ShopBanner />
 <Articles 

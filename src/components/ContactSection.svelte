@@ -12,7 +12,7 @@
   }
 </script>
 
-<section class="py-16 bg-white">
+<section id="kapcsolat" class="py-16 bg-white" >
   <div class="container mx-auto px-4">
     <h2 class="text-3xl font-bold text-center mb-12">Kapcsolat</h2>
     
@@ -88,12 +88,12 @@
             
             <div>
               <p class="font-semibold">Cégjegyzékszám:</p>
-              <p class="text-gray-600">14-09-314220</p>
+              <p class="text-gray-600">-</p>
             </div>
             
             <div>
               <p class="font-semibold">Adószám:</p>
-              <p class="text-gray-600">29044905-2-14</p>
+              <p class="text-gray-600">-</p>
             </div>
             
             <div>

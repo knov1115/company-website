@@ -12,16 +12,18 @@
       
       <div class="bg-white group flex flex-col h-full">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/kozpontiszellozes_articles_img.jpg"
-            alt="Központi szellőzés"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
+          <a href ="/cikkek/kozponti-szellozes-szerepe">
+            <img
+              src="/images/kozpontiszellozes_articles_img.jpg"
+              alt="Központi szellőzés"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="flex flex-col flex-grow pt-6">
           <h3 class="text-2xl font-bold mb-3">A központi szellőzés szerepe és fontossága a lakóépületekben</h3>
@@ -43,16 +45,18 @@
       <!-- Klíma karbantartás cikk -->
       <div class="bg-white group flex flex-col h-full">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/klima_karbantartas_article_img.jpg"
-            alt="Klíma karbantartás"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
+          <a href ="/cikkek/klima-karbantartas">
+            <img
+              src="/images/klima_karbantartas_article_img.jpg"
+              alt="Klíma karbantartás"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="flex flex-col flex-grow pt-6">
           <h3 class="text-2xl font-bold mb-3">Miért fontos a klíma szakszerű karbantartása?</h3>
@@ -73,16 +77,18 @@
       <!-- Hőszivattyú cikk -->
       <div class="bg-white group flex flex-col h-full">
         <div class="relative h-64 overflow-hidden">
-          <img
-            src="/images/hoszivattyu_article_img.jpg"
-            alt="Hőszivattyú"
-            class="w-full h-full object-cover"
-          />
-          <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
-            <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
-            </svg>
-          </div>
+          <a href ="/cikkek/hoszivattyu">
+            <img
+              src="/images/hoszivattyu_article_img.jpg"
+              alt="Hőszivattyú"
+              class="w-full h-full object-cover"
+            />
+            <div class="absolute bottom-0 right-0 w-12 h-12 bg-[#DC0000] flex items-center justify-center">
+              <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7" />
+              </svg>
+            </div>
+          </a>
         </div>
         <div class="flex flex-col flex-grow pt-6">
           <h3 class="text-2xl font-bold mb-3">Megéri a hőszivattyú?</h3>

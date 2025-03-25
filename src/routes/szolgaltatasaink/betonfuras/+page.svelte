@@ -20,8 +20,34 @@
   
   function handleKuldes(event) {
     console.log('Küldés esemény:', event.detail);
-    // Itt lehetne kapcsolatba lépni a backend szolgáltatással
-    alert('Köszönjük! Az árajánlatkérését megkaptuk, hamarosan felvesszük Önnel a kapcsolatot.');
+    
+    // Adatok feldolgozása
+    const formData = {
+      ...event.detail,
+      // Hozzáfűzzük az addedItems mezőt, ha az nincs még
+      addedItems: event.detail.addedItems || []
+    };
+    
+    // API hívás az adatok elküldéséhez
+    fetch('/api/betonfuras', {
+      method: 'POST',
+      headers: {
+        'Content-Type': 'application/json'
+      },
+      body: JSON.stringify(formData)
+    })
+    .then(response => response.json())
+    .then(result => {
+      if (result.success) {
+        alert('Köszönjük! Az árajánlatkérését megkaptuk, hamarosan felvesszük Önnel a kapcsolatot.');
+      } else {
+        alert('Hiba történt: ' + result.message);
+      }
+    })
+    .catch(error => {
+      console.error('Hiba az adatok küldése során:', error);
+      alert('Hiba történt az adatok küldése során. Kérjük próbálja újra később.');
+    });
   }
 </script>
 

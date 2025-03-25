@@ -1,4 +1,5 @@
 <script>
+  import { page } from '$app/stores';
   let isDropdownOpen = false;
 
   function toggleDropdown() {
@@ -7,6 +8,14 @@
 
   function scrollToServices(event) {
     event.preventDefault();
+    
+    // Ha nem a főoldalon vagyunk, először navigáljunk oda
+    if ($page.url.pathname !== '/') {
+      window.location.href = '/#szolgaltatasaink';
+      return;
+    }
+    
+    // Ha már a főoldalon vagyunk, görgessünk a szekcióhoz
     const servicesSection = document.getElementById('szolgaltatasaink');
     if (servicesSection) {
       servicesSection.scrollIntoView({ 
@@ -25,7 +34,7 @@
         <img src="/images/company_logo.jpg" alt="5CS Group" class="h-16 object-cover object-top" style="clip-path: inset(0 0 15% 0);" />
         <div class="relative overflow-hidden">
           <span class="text-2xl font-bold bg-gradient-to-r from-[#DC0000] to-[#FF4444] bg-clip-text text-transparent">
-            Konkurencia
+            BANOV
           </span>
           <div class="absolute bottom-0 left-0 w-full h-0.5 bg-gradient-to-r from-[#DC0000] to-[#FF4444] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out"></div>
         </div>
@@ -49,14 +58,17 @@
           <!-- Dropdown Content -->
           <div class="absolute right-0 mt-2 w-48 bg-white rounded-md shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition-all duration-200 transform translate-y-1 group-hover:translate-y-0">
             <div class="py-1">
-              <a href="/kapcsolat" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
+              <a href="/rolunk" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
                 Kapcsolat
               </a>
-              <a href="/betonfuras-kalkulator" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
+              <a href="/szolgaltatasaink/betonfuras" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
                 Betonfúrás kalkulátor
               </a>
-              <a href="/klima-kalkulator" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
+              <a href="/szolgaltatasaink/klima" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
                 Klíma kalkulátor
+              </a>
+              <a href="/bekuldesek" class="block px-4 py-2 text-sm text-gray-700 hover:bg-gray-50 hover:text-[#DC0000] transition-colors duration-200">
+                Beküldések
               </a>
             </div>
           </div>

@@ -158,7 +158,8 @@
       cim,
       email,
       telefon,
-      megjegyzes
+      megjegyzes,
+      addedItems
     });
   }
   

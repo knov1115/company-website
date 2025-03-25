@@ -11,31 +11,34 @@
       <div>
         <h3 class="font-medium mb-4 text-lg">Kapcsolat</h3>
         <div class="flex flex-col space-y-2 text-base text-gray-600">
-          <p><span class="font-medium">Székhely:</span> tba</p>
-          <p><span class="font-medium">Cégjegyzékszám:</span> tba</p>
-          <p><span class="font-medium">Adószám:</span> tba</p>
-          <p><span class="font-medium">Email:</span> tba</p>
+          <p><span class="font-medium">Székhely:</span> - </p>
+          <p><span class="font-medium">Cégjegyzékszám:</span> - </p>
+          <p><span class="font-medium">Adószám:</span> - </p>
+          <p><span class="font-medium">Email:</span> - </p>
         </div>
       </div>
 
       <!-- Services Links -->
       <div>
-        <h3 class="font-medium mb-4 text-lg">Szolgáltatásaink</h3>
+        <h3 class="font-medium mb-4 text-lg">Kalkulátoraink</h3>
         <ul class="space-y-2 text-base text-gray-600">
           <li><a href="/rolunk" class="hover:text-[#DC0000]">Rólunk</a></li>
-          <li><a href="/ajanlatkeres" class="hover:text-[#DC0000]">Ajánlatkérés</a></li>
-          <li><a href="/cikkek" class="hover:text-[#DC0000]">Cikkek</a></li>
+          <li><a href="/klima-kalkulator" class="hover:text-[#DC0000]">Klíma Ajánlatkérés</a></li>
+          <li><a href="/szolgaltatasaink/betonfuras" class="hover:text-[#DC0000]">Betonfúrás Ajánlatkérés</a></li>
+          
         </ul>
       </div>
 
       <!-- Webshop Links -->
       <div>
-        <h3 class="font-medium mb-4 text-lg">Webshop</h3>
+        <h3 class="font-medium mb-4 text-lg">Szolgáltatásaink</h3>
         <ul class="space-y-2 text-base text-gray-600">
+          <li><a href="/hoszivatyu" class="hover:text-[#DC0000]">Klíma</a></li>
           <li><a href="/hoszivatyu" class="hover:text-[#DC0000]">Hőszivattyú</a></li>
-          <li><a href="/klima" class="hover:text-[#DC0000]">Klíma</a></li>
-          <li><a href="/legtechnika" class="hover:text-[#DC0000]">Légtechnika</a></li>
-          <li><a href="/csovek-es-idomok" class="hover:text-[#DC0000]">Csövek és Idomok</a></li>
+          <li><a href="/klima" class="hover:text-[#DC0000]">Épületgépészeti kivitelezés</a></li>
+          <li><a href="/legtechnika" class="hover:text-[#DC0000]">Épületvillamosság</a></li>
+          <li><a href="/csovek-es-idomok" class="hover:text-[#DC0000]">Betonfúrás, magfúrás</a></li>
+          <li><a href="/csovek-es-idomok" class="hover:text-[#DC0000]">PLC programozás</a></li>
         </ul>
       </div>
 
