@@ -54,7 +54,7 @@
   imageAlt="Konkurencia Kft. Hőszivattyú szolgáltatások"
   ctaText="Energiahatékony megoldás otthonába!"
   buttonText="KAPCSOLATFELVÉTEL"
-  buttonLink="/kapcsolat"
+  buttonLink="/rolunk"
 />
 
 <ImageTextSplit
@@ -65,7 +65,7 @@
   imageAltRight="Hőszivattyú működési diagram"
   content={hoszivattyuTortenelem}
   ctaText="Kapcsolatfelvétel"
-  ctaLink="/kapcsolat"
+  ctaLink="/rolunk"
   backgroundColor="bg-gray-50"
 />
 
