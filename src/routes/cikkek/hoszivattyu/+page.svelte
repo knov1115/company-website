@@ -185,7 +185,7 @@
         <h3 class="text-lg font-semibold mb-3">Érdekli a hőszivattyús rendszer?</h3>
         <p class="mb-4">Vegye fel velünk a kapcsolatot és szakértő kollégáink segítenek a megfelelő rendszer kiválasztásában!</p>
         <a 
-          href="/kapcsolat" 
+          href="/rolunk" 
           class="inline-block bg-[#DC0000] text-white px-6 py-3 rounded-md hover:bg-[#b00000] transition-colors duration-200"
         >
           Kapcsolatfelvétel

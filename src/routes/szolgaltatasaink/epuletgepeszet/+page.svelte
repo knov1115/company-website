@@ -60,7 +60,7 @@
   imageAlt="Konkurencia Kft. épületgépészeti szolgáltatások"
   ctaText="Professzionális épületgépészeti megoldások minden igényre!"
   buttonText="KAPCSOLATFELVÉTEL"
-  buttonLink="/kapcsolat"
+  buttonLink="/rolunk"
 />
 
 <ImageTextSplit
@@ -71,7 +71,7 @@
   imageAltRight="Épületgépészeti kivitelezés"
   content={epuletgepeszetBevezeto}
   ctaText="Kapcsolatfelvétel"
-  ctaLink="/kapcsolat"
+  ctaLink="/rolunk"
   backgroundColor="bg-gray-50"
 />
 

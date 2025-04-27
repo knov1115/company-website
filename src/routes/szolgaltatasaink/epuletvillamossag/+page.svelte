@@ -55,7 +55,7 @@
   imageAlt="Konkurencia Kft. Épületvillamossági szolgáltatások"
   ctaText="Kérjen ingyenes helyszíni felmérést!"
   buttonText="KAPCSOLATFELVÉTEL"
-  buttonLink="/kapcsolat"
+  buttonLink="/rolunk"
 />
 
 <ImageTextSplit
@@ -66,7 +66,7 @@
   imageAltRight="Modern épületvillamossági megoldások"
   content={villamossagTortenelem}
   ctaText="Kapcsolatfelvétel"
-  ctaLink="/kapcsolat"
+  ctaLink="/rolunk"
   backgroundColor="bg-gray-50"
 />
 

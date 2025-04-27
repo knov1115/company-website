@@ -77,7 +77,7 @@
   imageAltRight="Modern klímahasználat"
   content={klimaTortenelem}
   ctaText="Kapcsolatfelvétel"
-  ctaLink="/kapcsolat"
+  ctaLink="/rolunk"
   backgroundColor="bg-gray-50"
 />
 

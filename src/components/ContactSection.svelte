@@ -6,9 +6,43 @@
     message: ''
   };
 
-  function handleSubmit() {
-    // TODO: Implement form submission logic
-    console.log('Form submitted:', formData);
+  let isSubmitting = false;
+  let submitStatus = null; // 'success', 'error', null
+
+  async function handleSubmit() {
+    isSubmitting = true;
+    submitStatus = null;
+    
+    try {
+      const response = await fetch('/api/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(formData)
+      });
+      
+      const result = await response.json();
+      
+      if (result.success) {
+        submitStatus = 'success';
+        // Űrlap törlése sikeres küldés után
+        formData = {
+          name: '',
+          email: '',
+          phone: '',
+          message: ''
+        };
+      } else {
+        submitStatus = 'error';
+        console.error('Hiba történt:', result.error);
+      }
+    } catch (error) {
+      submitStatus = 'error';
+      console.error('Hiba a küldés során:', error);
+    } finally {
+      isSubmitting = false;
+    }
   }
 </script>
 
@@ -19,6 +53,18 @@
     <div class="grid grid-cols-1 lg:grid-cols-2 gap-8">
       <!-- Contact Form -->
       <div class="bg-gray-50 p-8 rounded-lg">
+        {#if submitStatus === 'success'}
+          <div class="bg-green-50 border-l-4 border-green-500 p-4 mb-6">
+            <p class="text-green-700">Köszönjük üzenetét! Hamarosan felvesszük Önnel a kapcsolatot.</p>
+          </div>
+        {/if}
+        
+        {#if submitStatus === 'error'}
+          <div class="bg-red-50 border-l-4 border-red-500 p-4 mb-6">
+            <p class="text-red-700">Az üzenet küldése sikertelen volt. Kérjük, próbálja újra később, vagy használja az egyéb elérhetőségeinket.</p>
+          </div>
+        {/if}
+        
         <form on:submit|preventDefault={handleSubmit} class="space-y-6">
           <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
             <input
@@ -27,6 +73,7 @@
               bind:value={formData.name}
               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC0000] focus:border-transparent"
               required
+              disabled={isSubmitting}
             />
             <input
               type="email"
@@ -34,6 +81,7 @@
               bind:value={formData.email}
               class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC0000] focus:border-transparent"
               required
+              disabled={isSubmitting}
             />
           </div>
           
@@ -42,6 +90,7 @@
             placeholder="Telefonszám"
             bind:value={formData.phone}
             class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC0000] focus:border-transparent"
+            disabled={isSubmitting}
           />
           
           <textarea
@@ -50,6 +99,7 @@
             rows="6"
             class="w-full px-4 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-[#DC0000] focus:border-transparent resize-none"
             required
+            disabled={isSubmitting}
           ></textarea>
 
           <div class="flex items-start space-x-2">
@@ -58,6 +108,7 @@
               id="privacy"
               class="mt-1"
               required
+              disabled={isSubmitting}
             />
             <label for="privacy" class="text-sm text-gray-600">
               Elfogadom az <a href="/adatkezelesi-tajekoztato" class="text-[#DC0000] hover:underline">adatkezelési tájékoztatót</a>
@@ -66,9 +117,14 @@
 
           <button
             type="submit"
-            class="bg-[#DC0000] text-white px-8 py-3 rounded-md hover:bg-[#b00000] transition-colors duration-200"
+            class="bg-[#DC0000] text-white px-8 py-3 rounded-md hover:bg-[#b00000] transition-colors duration-200 disabled:bg-gray-400 disabled:cursor-not-allowed"
+            disabled={isSubmitting}
           >
-            KÜLDÉS
+            {#if isSubmitting}
+              <span>KÜLDÉS FOLYAMATBAN...</span>
+            {:else}
+              <span>KÜLDÉS</span>
+            {/if}
           </button>
         </form>
       </div>

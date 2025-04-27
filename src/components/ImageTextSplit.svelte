@@ -7,7 +7,7 @@
   export let imageAltLeft = "Kép leírás";
   export let imageAltRight = "Kép leírás";
   export let ctaText = "Kapcsolatfelvétel";
-  export let ctaLink = "/kapcsolat";
+  export let ctaLink = "/rolunk";
   export let backgroundColor = "bg-gray-50";
   export let reverse = false;
   export let showCta = true;
