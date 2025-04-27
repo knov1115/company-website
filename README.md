@@ -135,5 +135,3 @@ A klíma kalkulátor űrlapok adatainak tárolására szolgáló modell:
 A következő környezeti változók szükségesek:
 - `MONGODB_URI` - MongoDB kapcsolódási URL
 
-## Licensz
-Minden jog fenntartva, [Cégnév] © 2023
